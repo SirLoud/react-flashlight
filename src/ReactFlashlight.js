@@ -15,19 +15,17 @@ import ResizeObserver from 'resize-observer-polyfill';
  * @param {number} darkness Defines how dark is the "room"
  */
 
-export default function ReactFlashlight(props) {
-
-  const {
-    enabled,
-    children,
-    showCursor,
-    size,
-    initialPosition,
-    moveTo,
-    speed,
-    enableMouse,
-    darkness,
-  } = props; 
+export default function ReactFlashlight({
+  enabled = true,
+  children = <div></div>, // Imposta un valore predefinito per children
+  showCursor = false,
+  size = 150,
+  initialPosition = { x: 0, y: 0 },
+  moveTo = null,
+  speed = 1000,
+  enableMouse = true,
+  darkness = 0.9
+}) {
 
   const lightStyle = {
     position: "absolute",
@@ -197,15 +195,3 @@ ReactFlashlight.propTypes = {
   enableMouse: PropTypes.bool,
   darkness: PropTypes.number,
 }
-
-ReactFlashlight.defaultProps = {
-  enabled: true,
-  children: <div></div>,
-  showCursor: false,
-  size: 150,
-  initialPosition: {x: 0, y: 0},
-  moveTo: null,
-  speed: 1000,
-  enableMouse: true,
-  darkness: 0.9,
-} 
