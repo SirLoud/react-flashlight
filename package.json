@@ -1,6 +1,6 @@
 {
   "name": "react-flashlight",
-  "author": "Reale Roberto Josef Antonio",
+  "author": "Reale Roberto Josef Antonio - edited by SirLoud",
   "license": "MIT",
   "version": "1.0.6",
   "description": "A flashlight effect for React",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sickdyd/react-flashlight.git"
+    "url": "git+https://github.com/SirLoud/react-flashlight/tree/custom"
   },
   "keywords": [
     "flashlight",
